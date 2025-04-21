@@ -79,6 +79,8 @@ This project is organized as follows:
 - **resource.properties**: Contains endpoint mappings for API requests.
 
 - **package.json**: Contains the project dependencies and scripts.
+- **.env.example**: To be replaced with .env after cloning repo
+
 
 ## Getting Started
 
