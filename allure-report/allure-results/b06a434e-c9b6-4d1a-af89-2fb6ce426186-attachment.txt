@@ -1,0 +1,1 @@
+Status: PASSED, CurrentUrl: https://magento.softwaretestingboard.com/catalogsearch/result/?q=%21%40%23%24%25

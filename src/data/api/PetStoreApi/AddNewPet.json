@@ -1,0 +1,19 @@
+{
+    "id": 123456, 
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "name": "Max",
+    "photoUrls": [
+      "https://example.com/photo1.jpg"
+    ],
+    "tags": [
+      {
+        "id": 101,
+        "name": "friendly"
+      }
+    ],
+    "status": "available"
+  }
+  

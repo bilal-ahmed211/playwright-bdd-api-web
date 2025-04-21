@@ -1,0 +1,1 @@
+Status: PASSED, CurrentUrl: https://magento.softwaretestingboard.com/wishlist/index/

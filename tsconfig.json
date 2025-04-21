@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true, // Enable importing JSON modules
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "module": "commonjs", // Or 'esnext' based on your project setup
+    "outDir": "./dist",
+    "sourceMap": true,
+    // "outFile": "./build",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noFallthroughCasesInSwitch": true,
+    "skipDefaultLibCheck": true,
+    "target": "ESNext",
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "moduleResolution": "node", // Or 'nodenext' for ES modules
+      "strict": true              // Optional, for stricter type-checking
+  },
+  "exclude": ["node_modules"],
+}
