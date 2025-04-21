@@ -115,7 +115,7 @@ To get started with this project, follow these steps after cloning repo:
    IS_HEADLESS_MODE_ENABLED to be true in .env file
    ``` 
 
-7. Run tests in GitHub CI:
+7. Run tests in GitHub Actions CI:
    ```sh
    EXECUTE_TYPE key to be CI in .env file
    ```
