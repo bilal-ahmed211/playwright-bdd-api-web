@@ -9,3 +9,7 @@ node_modules/
 @rerun.txt
 OUTPUT.txt
 /traces/
+/screenshots/
+/allure-results/
+/.allure/
+/allure-report/

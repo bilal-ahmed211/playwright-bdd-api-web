@@ -6,6 +6,39 @@ import * as fs from 'fs';
 
 const ajv = new Ajv(); // Instantiate AJV
 
+export const validateJsonSchema = (jsonData: any, schema: any): boolean => {
+    const validate = ajv.compile(schema);
+    const valid = validate(jsonData);
+    if (!valid) {
+        console.error('❌ JSON Schema Validation Errors:', validate.errors);
+    } else {
+        console.log('✅ JSON Schema Validation Passed');
+    }
+    return valid;
+};
+export const validateJsonSchemaFromFile = (jsonData: any, schemaFilePath: string): boolean => {
+    const schema = JSON.parse(fs.readFileSync(schemaFilePath, 'utf-8'));
+    const validate = ajv.compile(schema);
+    const valid = validate(jsonData);
+    if (!valid) {
+        console.error('❌ JSON Schema Validation Errors:', validate.errors);
+    } else {
+        console.log('✅ JSON Schema Validation Passed');
+    }
+    return valid;
+};
+export const validateJsonSchemaFromFileWithPath = (jsonData: any, schemaFilePath: string): boolean => {
+    const schema = JSON.parse(fs.readFileSync(schemaFilePath, 'utf-8'));
+    const validate = ajv.compile(schema);
+    const valid = validate(jsonData);
+    if (!valid) {
+        console.error('❌ JSON Schema Validation Errors:', validate.errors);
+    } else {
+        console.log('✅ JSON Schema Validation Passed');
+    }
+    return valid;
+};
+
 export const readJsonFile = async (fileName: string, jsonFilePath: any): Promise<any> => {
     const filePath = path.resolve(__dirname, `${jsonFilePath}`, fileName);
     return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
